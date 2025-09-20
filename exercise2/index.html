@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grades and Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <h1 id="page-title">Student Grades</h1>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Temirlan</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>English</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Erhan</td>
+        <td colspan="2" style="text-align:center;">Passed All Subjects</td>
+      </tr>
+      <tr>
+        <td>Amir</td>
+        <td>Science</td>
+        <td>F-</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h1 id="form-title">Feedback Form</h1>
+  <form class="feedback-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Would you recommend this course?</label><br>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label><br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
