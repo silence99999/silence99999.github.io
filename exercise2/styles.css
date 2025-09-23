@@ -84,7 +84,7 @@ tbody tr:nth-child(even) {
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
-  transition: background 0.3s;
+  transition: background 2s;
 }
 
 .feedback-form button:hover {
