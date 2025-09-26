@@ -76,3 +76,6 @@ body {
   padding: 10px;
 }
 
+#main-content:hover{
+  border-radius:5px;
+}
