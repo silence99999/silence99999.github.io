@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>EventBook — Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">EventBook</div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:18px; padding-bottom:40px;">
+    <h2 style="color:#0b3b5a; margin-bottom:12px;">Book your ticket</h2>
+    <div class="two-col">
+      <div>
+        <div class="form" id="bookingForm">
+          <label for="name">Full name</label>
+          <input id="name" class="input" type="text" required placeholder="Your full name">
+
+          <label for="email">Email</label>
+          <input id="email" class="input" type="email" required placeholder="you@example.com">
+
+          <label for="event">Event</label>
+          <select id="event" class="input" required>
+            <option value="">Select event</option>
+            <option>Live Concert — Oct 01</option>
+            <option>Business Summit — Oct 05</option>
+            <option>Art Exhibition — Oct 10</option>
+          </select>
+
+          <label>Ticket type</label>
+          <select id="ticketType" class="input" required>
+            <option>General</option>
+            <option>VIP</option>
+            <option>Student</option>
+          </select>
+
+          <label>Quantity</label>
+          <input id="qty" class="input" type="number" min="1" max="10" value="1">
+
+          <div style="display:flex; gap:10px;">
+            <button class="btn" onclick="submitBooking(event)">Book now</button>
+            <a class="btn secondary" href="events.html">Back to events</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h4 style="margin-bottom:8px;">Booking tips</h4>
+        <p style="color:#475569; font-size:14px;">Make sure your email is correct — confirmation is sent by email. VIP tickets include early entry.</p>
+        <hr style="margin:12px 0;">
+        <p style="font-size:13px; color:#6b7280;">Cancellation policy: Refunds available up to 7 days before the event.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 EventBook</div>
+      <div><a href="mailto:info@eventbook.com" style="color:#bfe9ff;">info@eventbook.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>

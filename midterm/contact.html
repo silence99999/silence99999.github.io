@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>EventBook — Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">EventBook</div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:18px; padding-bottom:40px;">
+    <h2 style="color:#0b3b5a; margin-bottom:12px;">Get in touch</h2>
+    <div class="two-col">
+      <div>
+        <form class="form" id="contactForm" onsubmit="sendMail(event)">
+          <label for="cname">Name</label>
+          <input id="cname" class="input" required placeholder="Your name">
+
+          <label for="cemail">Email</label>
+          <input id="cemail" class="input" type="email" required placeholder="you@example.com">
+
+          <label for="cmessage">Message</label>
+          <textarea id="cmessage" class="input" required placeholder="How can we help?"></textarea>
+
+          <div style="display:flex; gap:10px;">
+            <button class="btn" type="submit">Send message</button>
+            <a class="btn secondary" href="mailto:info@eventbook.com">Email us</a>
+          </div>
+        </form>
+      </div>
+
+      <aside class="sidebar">
+        <h4>Contact info</h4>
+        <p style="color:#475569; font-size:14px;">EventBook HQ<br>123 Main Street<br>City, Country</p>
+        <p style="color:#475569;">Phone: +7 777 777 7777</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 EventBook</div>
+      <div><a href="mailto:info@eventbook.com" style="color:#bfe9ff;">info@eventbook.com</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
