@@ -3,7 +3,7 @@ body {
   padding-top: 70px;
 }
 .custom-col {
-  background-color: #3498db;
+  background-color: purple;
   color: white;
   border: 2px solid #fff;
   text-align: center;
@@ -12,5 +12,5 @@ body {
 }
 
 .custom-col:hover {
-  background-color: #2980b9;
+  background-color: red;
 }
