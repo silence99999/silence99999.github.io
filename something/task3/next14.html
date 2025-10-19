@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="styles1.css" rel="stylesheet">
+  <title>Простой Квиз</title>
+</head>
+<body>
+  <h2>Как называется эта позиция</h2>
+
+  <img src="Screenshot 2025-10-19 135523.png">
+  <button onclick="checkAnswer('BOBA')">BOBA</button>
+  <button onclick="checkAnswer('Чай')">Чай</button>
+  <button onclick="checkAnswer('Я не люблю баблти')">Я не люблю баблти</button>
+  <button onclick="checkAnswer('Манго маракуйя')">Манго маракуйя</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer(answer) {
+      let result = document.getElementById("result");
+      if (answer === "Я не люблю баблти") {
+        result.textContent = "✅ Правильно! Умниса мая все прошла, а теперь время выносить команду Отченазес";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ Неправильно!";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

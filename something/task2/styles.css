@@ -1,0 +1,33 @@
+  body {
+        background-color: #111;
+        color: white;
+      }
+
+      .header {
+        margin-top: 20px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .buttons button {
+        background-color: #222;
+        color: white;
+        border: 1px solid #555;
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: 0.3s;
+      }
+      .buttons button a{
+        color: white;
+        text-decoration-line: none;
+      }
+
+      .buttons button:hover {
+        background-color: #444;
+      }

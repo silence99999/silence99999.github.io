@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="styles1.css" rel="stylesheet">
+  <title>Простой Квиз</title>
+</head>
+<body>
+  <h2>Как называется эта позиция</h2>
+
+  <img src="Screenshot 2025-10-19 135010.png">
+  <button onclick="checkAnswer('Short')">Short</button>
+  <button onclick="checkAnswer('Lamps')">Lamps</button>
+  <button onclick="checkAnswer('Window')">Window</button>
+  <button onclick="checkAnswer('ADLET NEGR')">ADLET NEGR</button>
+
+  <p id="result"></p>
+  <button type="button" id="next" style="opacity: 0;"><a href="next8.html" style=" text-decoration: none; color:black;">Дальше</a></button>
+
+  <script>
+    function checkAnswer(answer) {
+        let next = document.getElementById("next")
+      let result = document.getElementById("result");
+      if (answer === "ADLET NEGR") {
+        result.textContent = "✅ Правильно! ADLET NEGR";
+        result.style.color = "green";
+        next.style.opacity = 100;
+      } else {
+        result.textContent = "❌ Неправильно!";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

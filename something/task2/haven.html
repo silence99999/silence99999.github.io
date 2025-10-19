@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Цель</title>
+  <style>
+    body {
+        background:url(Screenshot\ 2025-10-17\ 173021.png);
+      margin: 0;
+      height: 100vh;
+      background-color: black;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+
+    }
+
+    button {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: red;
+      border: none;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="target"></button>
+
+  <script>
+    const button = document.getElementById('target');
+
+    button.addEventListener('click', () => {
+      button.style.display = 'none';
+
+
+      const padding = 50; 
+      const minY = 100;   
+      const maxY = window.innerHeight - button.offsetHeight - 100;
+      const x = padding + Math.random() * (window.innerWidth - button.offsetWidth - padding * 2);
+      const y = minY + Math.random() * (maxY - minY);
+
+      setTimeout(() => {
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+        button.style.display = 'block';
+      }, 200);
+    });
+  </script>
+
+</body>
+</html>

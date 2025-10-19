@@ -1,0 +1,32 @@
+body {
+    background:url(f2bee413-ddbd-4404-84d4-f94decbbe918.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    margin:0;
+    padding:0;
+    animation:hearts 15s linear infinite;
+}
+
+.container{
+    font: italic small-caps bold 16px/2 cursive;
+    padding-top: 10%;
+    font-size:50px;
+}
+.container p{
+    font-size:40px;
+    font-weight: normal;
+}
+.container h1 {
+    font-weight:bold;
+}
+
+@keyframes hearts {
+    0% {
+        background-position: 0 0;
+    }
+     100% {
+        background-position: 0 181px;
+    }
+}
+
